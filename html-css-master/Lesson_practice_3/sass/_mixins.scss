@@ -1,0 +1,23 @@
+@mixin flex(
+  $align-items: flex-start,
+  $justify-content: flex-start,
+  $gap: 0,
+  $flex-direction: row,
+  $flex-wrap: nowrap
+) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  gap: $gap;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+};
+
+
+@mixin rectangle($width:0, $height:0)
+{
+  width: $width;
+  height: $height;
+}
+
+

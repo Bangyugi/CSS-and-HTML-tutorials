@@ -1,0 +1,30 @@
+@import "./mixins";
+@import "./variable";
+
+.header {
+  background-color: #fff;
+  padding: 16px 0;
+  box-shadow: 0px 6px 30px rgba(15, 15, 15, 0.06);
+  &-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    @include flex(center, center, 20px);
+   
+  }
+  &-item{
+    padding: 14px 22px;
+    border-radius: 10px;
+    background-color: $gray7;
+    display: block;
+
+    &:hover{
+      background-color: $primary-color;
+      color: #fff;
+    }
+
+    transition: 0.5s  ;
+
+  }
+}

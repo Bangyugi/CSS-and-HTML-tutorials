@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./Style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class=container-content>
+                <div class="type">
+                    <a
+                        href="https://translate.google.com/?sl=en&tl=vi&text={{vocabulary}}&op=translate">{{vocabulary}}</a>
+                    <span class="loaitu">({{word type}})</span>
+                </div>
+                <br>
+                <div class="container-content-pharagraph">
+                    <div id="paragraph" style="display:none">{{Meaning}}</div>
+                    <img onclick="playParagraph();" />
+                    <a class="example_sentences"
+                        href="https://translate.google.com/?sl=en&tl=vi&text={{Meaning}}&op=translate"><i><u>Meaning</u>:
+                        </i> {{Meaning}}</a>
+                </div>
+                <div class="container-content-pharagraph">
+                    <div id="paragraph" style="display:none">{{Example}}</div>
+                    <img onclick="playParagraph();" />
+                    <a class="example_sentences"
+                        href="https://translate.google.com/?sl=en&tl=vi&text={{Example}}&op=translate">
+                        <i><u>Example</u>: </i><span
+                            style="color:#888">{{Example}}</span></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

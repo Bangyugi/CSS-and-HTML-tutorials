@@ -1,0 +1,43 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+.card-list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* CSS Reset */
+
+
+.card-item {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+
+    /* flex: 1; */
+
+    aspect-ratio: 1;
+}
+
+.card-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
